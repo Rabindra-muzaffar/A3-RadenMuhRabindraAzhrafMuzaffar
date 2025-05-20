@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<link rel="stylesheet"  href="style.css">
+<link rel="stylesheet"  href="corestyle.css">
+<script src="dropdown.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="Images/logo.png">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Our Prices</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                +61 484 105 891
+            </a>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-2274">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">SPOTLESS SPACES, TRUSTED SERVICES</h1>
+            <p class="cs-text">
+                In our unwavering commitment to excellence, we are devoted to creating a spotless future where cleanliness, reliability, and customer satisfaction come together effortlessly.
+            </p>
+            <a href="" class="cs-button-solid">
+                Get Spotless Today
+                <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+            </a>
+        </div>
+        <!--To make your own background crops of people use https://www.remove.bg/-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" img src="Images/housekeeper.png">
+            <source media="(min-width: 601px)" img src="Images/housekeeper.png">
+            <img aria-hidden="true" decoding="async" img src="Images/housekeeper.png" alt="housekeeper" width="800" height="1000">
+        </picture>
+    </div>
+    <div class="cs-image-group">
+        <!--Left Image-->
+        <picture class="cs-background cs-background1">
+            <source media="(max-width: 600px)" img src="Images/banner.jpeg">
+            <source media="(min-width: 601px)"img src="Images/banner.jpeg">
+            <img aria-hidden="true" decoding="async" img src="Images/banner.jpeg" width="1290" height="684">
+        </picture>
+        <!--Right Image-->
+        <picture class="cs-background cs-background2">
+            <source media="(max-width: 600px)" img src="Images/right img.jpeg">
+            <source media="(min-width: 601px)" img src="Images/right img.jpeg">>
+            <img aria-hidden="true" decoding="async"img src="Images/right img.jpeg" alt="construction site" width="630" height="684">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="Hservices-2274">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a>
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction1.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Best Cleaning Service </h3>
+                    <p class="cs-item-text">
+                        Revitalize your space with pristine cleaning and impeccable finishes!
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a>
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction2.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Quality Always Matters </h3>
+                    <p class="cs-item-text">
+                        Exceptional cleaning brings enduring freshness and flawless functionality.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a>
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction3.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Effective Teamwork </h3>
+                    <p class="cs-item-text">
+                        Collaboration drives success through shared goals and communication.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction4.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <span class="cs-number">3K+</span>
+                    <h3 class="cs-h3">Happy Customers</h3>
+                    <p class="cs-item-text">
+                        With more than 7 years of expertise we served our clients.
+                    </p>
+                    <span class="cs-fake-link">
+                        Let's Work Together
+                        <img class="cs-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+                    </span>
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" img src="Images/bg.jpeg">
+                        <source media="(min-width: 601px)" img src="Images/bg.jpeg">
+                        <img aria-hidden="true" decoding="async" img src="Images/bg.jpeg" alt="construction site" width="630" height="684">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-1790">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Pricing</span>
+                <h2 class="cs-title">Choose Pricing Plans</h2>
+            </div>
+            <a href="" class="cs-button-solid">Book Appointment</a>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Service at All Locations
+
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    General & Deep Cleaning Options
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Specialized Services (e.g. Carpet, Window, Upholstery)
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Eco-Friendly Products & Disinfection Treatments
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Referral Rewards & Complimentary Estimates
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    30-Minute Cleanliness Consultation
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Technique-Focused Cleaning Sessions
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Custom Cleaning Plans
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Secure Storage & Key Management
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="24" height="24">
+                    Post-Clean Refresh Amenities
+
+                </li>
+            </ul>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-package">Basic Clean</span>
+                    <div class="cs-flex-wrapper">
+                        <span class="cs-price">$49.99</span>
+                        <span class="cs-frequency">
+                            /Month
+                        </span>
+                    </div>
+                    <p class="cs-item-text">
+                        This flexible month-to-month option includes 1 standard cleaning per week, up to 4 cleanings per month.
+                        <br>✔️ Advance booking required.                    </p>
+                    <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+                </li>
+                <li class="cs-item cs-popular">
+                    <span class="cs-package">Deep Clean</span>
+                    <div class="cs-flex-wrapper">
+                        <span class="cs-price">$99.99</span>
+                        <span class="cs-frequency">
+                            /Month
+                        </span>
+                    </div>
+                    <p class="cs-item-text">
+                        Includes up to 4 premium deep cleans per month—perfect for larger homes or high-traffic areas.<br>☑️ Advanced tools & eco-friendly products.<br>☑️ Booking required.
+                                            </p>
+                    <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-package">Full Service Plan</span>
+                    <div class="cs-flex-wrapper">
+                        <span class="cs-price">$149.99</span>
+                        <span class="cs-frequency">
+                            /Month
+                        </span>
+                    </div>
+                    <p class="cs-item-text">
+                        Enjoy up to 4 fully customized cleanings per month, including:
+                        <br>✔️ Standard + Deep Clean combo
+                        <br>✔️ Add-ons like window, oven, or carpet care
+                        <br>✔️ Priority scheduling                    </p>
+                    <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- SVG Graphic -->
+    <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-texture.svg" alt="graphic" height="1920" width="483" loading="lazy" decoding="async" aria-hidden="true">
+    <!--Dark mode graphic, download and save locally, then open the file in your code editor and change the fill color to match the background color of the section below it on dark mode-->
+    <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-spatter.svg" alt="graphic" height="1920" width="483" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1741">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Frequently Asked Questions</span>
+            <h2 class="cs-title">A Sparkling Home Starts with Clear Answers</h2>
+            <a href="" class="cs-button-solid">
+                Ask Another Question
+            </a>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do I book a cleaning?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        You can easily book online through our website or call our customer service team. Choose your service, select a date, and we'll handle the rest!
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What payment methods do you accept?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        We accept all major credit and debit cards, as well as contactless payments and bank transfers.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can I reschedule or cancel my appointment?
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Yes! You can reschedule or cancel up to 24 hours before your appointment at no charge.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What's included in a standard cleaning?                        
+                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Our standard service includes dusting, vacuuming, mopping, surface disinfecting, bathroom and kitchen cleaning. You can also add extras like oven or window cleaning!
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you bring your own supplies and equipment?                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Absolutely. Our team arrives fully equipped with eco-friendly products and professional-grade tools.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How can I get in touch with support?                        </span>
+                    </button>
+                    <p class="cs-item-text">
+                        Reach out anytime via our contact form, phone, or email. Our support team is available 7 days a week!
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-gallery">
+        <!--Picture 1-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" img src="Images/g2.jpeg">
+            <source media="(min-width: 601px)" img src="Images/g2.jpeg">
+            <img loading="lazy" decoding="async"img src="Images/g2.jpeg" alt="gallery" width="272" height="320">
+        </picture>
+        <!--Picture 2-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" img src="Images/g3.jpeg">
+            <source media="(min-width: 601px)" img src="Images/g3.jpeg">
+            <img loading="lazy" decoding="async" img src="Images/g3.jpeg" alt="gallery" width="272" height="320">
+        </picture>
+        <!--Picture 3-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" img src="Images/g1.jpeg">
+            <source media="(min-width: 601px)" img src="Images/g1.jpeg">
+            <img loading="lazy" decoding="async" img src="Images/g1.jpeg" alt="gallery" width="272" height="320">
+        </picture>
+        <!--Picture 4-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" img src="Images/g4.jpeg">
+            <source media="(min-width: 601px)" img src="Images/g4.jpeg">
+            <img loading="lazy" decoding="async" img src="Images/g4.jpeg" alt="gallery" width="272" height="320">
+        </picture>
+        <!--Picture 5-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" img src="Images/g5.jpeg">
+            <source media="(min-width: 601px)" img src="Images/g5.jpeg">
+            <img loading="lazy" decoding="async" img src="Images/g5.jpeg" alt="gallery" width="272" height="320">
+        </picture>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-2320">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch With Spotless Maintenance Services</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label cs-services">
+                    Services
+                    <select class="cs-input" name="Services">
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="New Construction">New Construction</option>
+                        <option value="Remodels">Remodels</option>
+                        <option value="Cabinets">Cabinets</option>
+                    </select>
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </form>
+        </div>
+        <!--Map Image, pin is made in the Figma then export as one image-->
+        <div class="cs-map">
+            <div class="cs-iframe-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172153.33373691145!2d-122.33979794999999!3d47.608715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1739169879796!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cs-box">
+                <img class="cs-icon" decoding="async" loading="lazy" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-pin.svg" alt="icon" width="40" height="40" aria-hidden="true">
+                <div class="cs-flex">
+                    <span class="cs-header">Location</span>
+                    <span class="cs-address">2/3 Seventh Avenue, Dandenong, Victoria 3175
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cs-container2">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" img src="Images/Footer.jpeg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" img src="Images/Footer.jpeg">
+            <img loading="lazy" decoding="async"img src="Images/Footer.jpeg" width="1280" height="243">
+        </picture>
+        <div class="cs-hours">
+            <div class="cs-topper">Working Hours</div>
+            <span class="cs-hours-info">Monday - Saturday: 10:00 - 20:00 
+                Sunday: Closed</span>
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" img src="Images/logo.png" alt="logo" width="240" height="32">
+            </a>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:123-456 7890">0484105891 - David</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:info@codestitch.com">0416601787 - Ruby</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:info@codestitch.com">info@spotlessmaintenance.com.au</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Address</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">2/3 Seventh Avenue St<br> Dandenong, Victoria 3175</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Opening Hours</span>
+            </li>
+            <li class="cs-nav-li">
+                Tuesday, Thursday, Friday: 9am-6pm
+            </li>
+            <li class="cs-nav-li">
+                ​(closed for lunch 12pm-2pm)
+            </li>
+        </ul>
+    </div>
+</footer>
+                                                                                               
+                                                           
